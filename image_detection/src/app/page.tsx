@@ -81,10 +81,16 @@ function App() {
 
         {/* Display the uploaded image */}
         {uploadedImage && (
+          <div className="flex items-center justify-center">
           <div>
             <h3>Uploaded Image Preview</h3>
-            <img src={uploadedImage} alt="Uploaded Preview" style={{ maxWidth: '100%' }} />
+            <img
+              src={uploadedImage}
+              alt="Uploaded Preview"
+              className="max-w-full h-auto max-h-96" 
+            />
           </div>
+        </div>
         )}
       </div>
 
